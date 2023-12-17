@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.header-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.chatbot-title {
+    color: #333;
+}
+
+.chat-container {
+    border: 1px solid #ccc;
+    width: calc(100% - 40px);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px;
+}
+
+#chat-display {
+    height: 600px;
+    overflow-y: scroll;
+    padding: 10px;
+}
+
+.user-message, .bot-message {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.chat-input {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+/* Resto de tus estilos... */
+
+input {
+    flex: 1;
+    padding: 8px;
+    margin-bottom: 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff; /* Cambié el color a blanco */
+}
+
+/* Resto de tus estilos... */
+
+
+button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #d9d9d9; /* Cambié el color a un tono más gris */
+    color: #fff;
+}
+
+/* Nuevos estilos para los márgenes entre mensajes */
+.user, .bot {
+    margin-bottom: 15px;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.typing {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: bottom;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #333;
+    display: inline-block;
+    margin-right: 5px;
+    animation: bounce 1s infinite;
+}
+
+.typing-container {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+
+#user-input {
+    margin-top: 10px;
+}
+
+/* Estilo para el contenedor del input y el botón */
+.chat-input-container {
+    display: flex;
+    background-color: #d9d9d9; /* Cambié el color a un tono más gris */
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Estilo para el input */
+#user-input {
+    flex: 1;
+    margin-right: 10px;
+}
+
+/* Estilo para el botón */
+button {
+    background-color: red; /* Cambié el color a un tono más gris */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Cambiar estilo del cursor al pasar sobre el botón */
+button:hover {
+    background-color: #b3b3b3; /* Cambié el color a un tono más oscuro al pasar el mouse */
+}
